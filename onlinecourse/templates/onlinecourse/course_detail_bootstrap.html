@@ -8,7 +8,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
 </head>
-
 <body>
     <!-- Navigation bar -->
     <nav class="navbar navbar-light bg-light">
@@ -38,7 +37,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Page content -->
     <div class="container-fluid">
             <h2>{{ course.name }}</h2>
@@ -88,11 +86,9 @@
             {% if not user.is_authenticated %}
                 <div class='alert-info'>You are not an authenticated user for these Exam Questions</div> 
             {% endif %}
-                
             <!-- Task: show questions and choices -->
             <!-- <HINT> Use Bootstrap Collapse to hide exam first, more details could be found here
             https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
-
             <!--
             A collapse example here:
             <div id="exam" class="collapse">
@@ -111,7 +107,6 @@
             <!-- <HINT> For each question choice, you may create a checkbox input like
             <input type="check" name="choice_{{choice.id}}" id="{{choice.id}}" ...>
             -->
-
             <!-- A choice submission form example
             <form id="questionform" action="point to a submit view" method="post">
                         ... for each question in the course ...
